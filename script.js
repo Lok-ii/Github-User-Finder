@@ -9,7 +9,7 @@ let user = async () => {
   userDetails.className = "container";
   container.innerHTML = "";
   if (data.message === "Not Found") {
-    userDetails.innerText = "User not found, Please enter a vaild username.";
+    userDetails.innerHTML= "User not found, Please enter a vaild username.";
   } else {
     userDetails.innerHTML = `<div class="user">
     <div class="profile">
@@ -47,13 +47,13 @@ let user = async () => {
     <div class="links">
       <span
         ><i class="fa-solid fa-map-location-dot"></i>
-        <span class="location">${data.location}</span></span
+        <span class="location">- ${data.location}</span></span
       >
       <br>
       <span
         ><i class="fa-solid fa-link"></i>
         <span class="website"
-          >${data.blog}</span
+          >- ${data.blog}</span
         ></span
       >
     </div>
